@@ -1,0 +1,50 @@
+{
+  "name": "push",
+  "version": "2.0.0",
+  "description": "PUSH - AI-Powered Blockchain Intelligence with x402 Payments",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:frontend\"",
+    "build": "tsc",
+    "build:frontend": "cd frontend && npm run build",
+    "build:all": "npm run build && npm run build:frontend",
+    "start": "node dist/server.js",
+    "install:all": "npm install && cd frontend && npm install"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "express": "^4.21.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.1",
+    "@types/ws": "^8.5.13",
+    "concurrently": "^9.1.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "blockchain",
+    "ai",
+    "x402",
+    "cryptocurrency",
+    "web3",
+    "claude",
+    "anthropic",
+    "defi",
+    "nft"
+  ],
+  "author": "",
+  "license": "MIT"
+}
