@@ -93,7 +93,7 @@ PUSH is an AI-powered blockchain intelligence service where users query real-tim
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/push.git
+git clone https://github.com/privacymaxi/push.git
 cd push
 npm run install:all
 ```
