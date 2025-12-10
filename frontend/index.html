@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PUSH - AI-Powered Blockchain Intelligence. 30+ tools, 7 networks, x402 payments." />
+    <meta name="theme-color" content="#000000" />
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='white'/%3E%3Ctext x='50' y='68' font-size='50' font-family='Arial Black' text-anchor='middle' fill='black'%3EP%3C/text%3E%3C/svg%3E" />
+    
+    <title>PUSH | Blockchain AI</title>
+    
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body, #root { height: 100%; width: 100%; }
+      body { 
+        background: #000; 
+        color: #fff; 
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      
+      /* Loading screen */
+      .loading-screen {
+        position: fixed;
+        inset: 0;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      .loading-logo {
+        width: 80px;
+        height: 80px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+        font-weight: 900;
+        color: #000;
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+      .loading-text {
+        margin-top: 20px;
+        font-family: monospace;
+        font-size: 12px;
+        color: #666;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(0.95); opacity: 0.8; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading-screen">
+        <div class="loading-logo">P</div>
+        <div class="loading-text">Initializing...</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

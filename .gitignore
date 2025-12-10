@@ -6,7 +6,7 @@ frontend/node_modules/
 dist/
 frontend/dist/
 
-# Environment files (NEVER commit these!)
+# Environment (NEVER commit!)
 .env
 .env.local
 .env.*.local
@@ -25,10 +25,6 @@ Thumbs.db
 *.log
 npm-debug.log*
 
-# Test coverage
-coverage/
-
-# Temporary files
-*.tmp
-*.temp
+# Cache
 .cache/
+*.tmp

@@ -1,5 +1,5 @@
 # ═══════════════════════════════════════════════════════════════════════════════
-# PUSH - Render Deployment Configuration
+# PUSH - Render Deployment
 # x402 Hackathon Project
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -13,29 +13,21 @@ services:
     startCommand: npm start
     healthCheckPath: /health
     envVars:
-      # Required - Set these in Render Dashboard
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: "10000"
+      # Set these in Render Dashboard (keep secret!)
       - key: PAY_TO_ADDRESS
         sync: false
       - key: ANTHROPIC_API_KEY
         sync: false
       - key: MERCHANT_PRIVATE_KEY
         sync: false
-      # Optional - Defaults provided
+      # Optional customization
       - key: CLAUDE_MODEL
         value: claude-sonnet-4-20250514
       - key: DEFAULT_PRICE
         value: "100000"
       - key: NETWORK
         value: base
-      - key: PORT
-        value: "10000"
-      # Optional - Add your own RPC URLs for better performance
-      # - key: ETH_RPC_URL
-      # - key: BASE_RPC_URL
-      # - key: ARBITRUM_RPC_URL
-      # - key: POLYGON_RPC_URL
-      # - key: OPTIMISM_RPC_URL
-      # - key: AVALANCHE_RPC_URL
-      # - key: BSC_RPC_URL
